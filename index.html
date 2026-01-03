@@ -1,71 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rishav | Web Developer</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishav - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <main class="container">
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">RISHAV</div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="menu-icon">☰</div>
+            </nav>
+        </div>
+    </header>
 
-    <!-- Hero / Header -->
-    <section class="hero">
-      <img class="profile-img" src="https://via.placeholder.com/160" alt="Rishav Profile">
-      <h1>Hi, I'm Rishav</h1>
-      <p class="subtitle">Student Web Developer</p>
-      <p class="intro">I build responsive websites and web apps using HTML, CSS, and JavaScript. I’m learning new technologies every day and building projects to improve my skills.</p>
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <h4>HELLO!</h4>
+                <h1>I'm <span>Rishav</span></h1>
+                <h2>Fullstack Web Developer</h2>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary">Hire Me</a>
+                    <a href="#projects" class="btn btn-outline">My Works</a>
+                </div>
+            </div>
+            <div class="hero-img-container">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Rishav" class="hero-img">
+            </div>
+        </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="section">
-      <h2>About Me</h2>
-      <p>I am a student passionate about web development. I enjoy creating clean and functional user experiences through code. I am currently learning front-end technologies and building projects to showcase my growth.</p>
+        <div class="container">
+            <div class="about-content">
+                <div class="about-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="About Rishav">
+                </div>
+                <div class="about-text">
+                    <div class="bg-watermark">About</div>
+                    <h2 class="section-title">About Me</h2>
+                    <p class="description">
+                        I am a passionate Fullstack Web Developer focused on building clean, user-friendly, and performant websites. I love solving complex problems and turning ideas into reality using code.
+                    </p>
+                    
+                    <ul class="info-list">
+                        <li><strong>Name:</strong> Rishav</li>
+                        <li><strong>Date of birth:</strong> January 01, 1995</li>
+                        <li><strong>Address:</strong> Mumbai, India</li>
+                        <li><strong>Email:</strong> rishav@example.com</li>
+                        <li><strong>Phone:</strong> +91 98765 43210</li>
+                    </ul>
+
+                    <div class="project-count">50+ Projects Completed</div>
+                    <a href="#" class="btn btn-primary">Download CV</a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="section">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <span class="skill">HTML</span>
-        <span class="skill">CSS</span>
-        <span class="skill">JavaScript</span>
-        <span class="skill">Responsive Design</span>
-      </div>
+        <div class="container">
+            <div class="section-header center">
+                <div class="bg-watermark center-watermark">Skills</div>
+                <h2 class="section-title">My Skills</h2>
+                <p class="description center-desc">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>PHP</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-bg">
+                        <div class="progress-bar" data-width="90%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>jQuery</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-bg">
+                        <div class="progress-bar" data-width="85%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>HTML5</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="progress-bg">
+                        <div class="progress-bar" data-width="95%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>CSS3</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-bg">
+                        <div class="progress-bar" data-width="90%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>WordPress</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="progress-bg">
+                        <div class="progress-bar" data-width="70%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>SEO</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress-bg">
+                        <div class="progress-bar" data-width="80%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-      
-        <div class="project-card">
-          <h3>Portfolio Template</h3>
-          <p>A homepage built with modern CSS, clean layout, and a strong visual hierarchy.</p>
-        </div>
-
-        <div class="project-card">
-          <h3>Website Demo</h3>
-          <p>A demo static site showcasing skills learned using HTML/CSS.</p>
-        </div>
-        
-        <div class="project-card">
-          <h3>Contact Form</h3>
-          <p>A backend-connected contact form with validation and SMTP support.</p>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:rishav.email@example.com">rishav.email@example.com</a></p>
-      <p>GitHub: <a href="https://github.com/rishav-web-dev" target="_blank">rishav-web-dev</a></p>
-    </section>
-
-  </main>
-
+    <script src="main.js"></script>
 </body>
 </html>
