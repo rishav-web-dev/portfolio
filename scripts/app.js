@@ -43,8 +43,32 @@
     document.addEventListener('DOMContentLoaded', () => {
       // load gracefully only if gsap available
       initGSAP();
+      initSwiper();
     });
   } else {
     initGSAP();
+    initSwiper();
   }
 })();
+
+// Initialize Swiper if available
+function initSwiper() {
+  if (!window.Swiper) return;
+  try {
+    const slider = new Swiper('.projects-slider', {
+      slidesPerView: 1.05,
+      spaceBetween: 18,
+      centeredSlides: true,
+      loop: true,
+      autoplay: { delay: 3500, disableOnInteraction: true },
+      pagination: { el: '.swiper-pagination', clickable: true },
+      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+      breakpoints: {
+        700: { slidesPerView: 2.05 },
+        1000: { slidesPerView: 3.05 }
+      }
+    });
+  } catch (err) {
+    // ignore
+  }
+}
