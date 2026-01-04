@@ -333,4 +333,52 @@ nav {
     .bg-watermark { display: none; } /* Hide large text on small screens */
 
     .skills-grid { grid-template-columns: 1fr; }
+
+
+    /* --- Contact Section Styles --- */
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #121212;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    color: var(--text-white);
+    font-family: var(--font-main);
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    border-color: var(--primary-color);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 20px;
+    }
+}
 }

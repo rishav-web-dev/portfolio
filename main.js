@@ -49,4 +49,26 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
+
+    // --- Contact Form Handling ---
+const contactForm = document.getElementById('contact-form');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form values
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        
+        // Normally you would send this to a server via fetch/API
+        console.log(`Message received from ${name} (${email})`);
+        
+        // Show success feedback
+        alert("Thank you, Rishav has received your message!");
+        
+        // Reset the form
+        contactForm.reset();
+    });
+}
 });
