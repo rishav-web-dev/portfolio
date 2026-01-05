@@ -1,74 +1,48 @@
-// scripts/app.js
-// Initialize GSAP ScrollTrigger-based animations and hero parallax
-(function () {
-  function initGSAP() {
-    if (!window.gsap) return;
-    try {
-      gsap.registerPlugin(ScrollTrigger);
-    } catch (e) {
-      // plugin already registered or missing
-    }
+document.addEventListener("DOMContentLoaded", () => {
+    gsap.registerPlugin(ScrollTrigger);
 
-    // Fade in elements with .gs-fade
-    gsap.utils.toArray('.gs-fade').forEach((el) => {
-      gsap.fromTo(el, { autoAlpha: 0, y: 24 }, {
-        autoAlpha: 1, y: 0, duration: 0.8, ease: 'power3.out',
-        scrollTrigger: { trigger: el, start: 'top 85%', toggleActions: 'play none none reverse' }
-      });
+    // 1. Hero Animations
+    const tl = gsap.timeline();
+    tl.from(".hero-text h4", { y: 20, opacity: 0, duration: 0.5 })
+      .from(".hero-text h1", { y: 30, opacity: 0, duration: 0.8 }, "-=0.3")
+      .from(".hero-text h2", { y: 20, opacity: 0, duration: 0.5 }, "-=0.5")
+      .from(".hero-btns", { y: 20, opacity: 0, duration: 0.5 }, "-=0.3")
+      .from(".hero-img", { x: 40, opacity: 0, duration: 1, ease: "power2.out" }, "-=0.8");
+
+    // 2. Section Headers
+    gsap.utils.toArray('.section-header').forEach(header => {
+        gsap.from(header.children, {
+            scrollTrigger: {
+                trigger: header,
+                start: "top 80%"
+            },
+            y: 30,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.2
+        });
     });
 
-    // Hero image parallax
-    const heroImg = document.querySelector('.hero-img');
-    if (heroImg) {
-      gsap.to(heroImg, {
-        y: -40,
-        ease: 'none',
+    // 3. Slider Fade In
+    gsap.from(".slider", {
         scrollTrigger: {
-          trigger: '.hero', start: 'top top', end: 'bottom top', scrub: 0.8
-        }
-      });
-    }
-
-    // Optional: animate project cards stagger
-    const cards = document.querySelectorAll('.project-card');
-    if (cards.length) {
-      gsap.fromTo(cards, { autoAlpha: 0, y: 20 }, {
-        autoAlpha: 1, y: 0, duration: 0.8, stagger: 0.12, ease: 'power3.out',
-        scrollTrigger: { trigger: '.projects-grid', start: 'top 85%' }
-      });
-    }
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => {
-      // load gracefully only if gsap available
-      initGSAP();
-      initSwiper();
+            trigger: "#projects",
+            start: "top 75%"
+        },
+        y: 60,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out"
     });
-  } else {
-    initGSAP();
-    initSwiper();
-  }
-})();
 
-// Initialize Swiper if available
-function initSwiper() {
-  if (!window.Swiper) return;
-  try {
-    const slider = new Swiper('.projects-slider', {
-      slidesPerView: 1.05,
-      spaceBetween: 18,
-      centeredSlides: true,
-      loop: true,
-      autoplay: { delay: 3500, disableOnInteraction: true },
-      pagination: { el: '.swiper-pagination', clickable: true },
-      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-      breakpoints: {
-        700: { slidesPerView: 2.05 },
-        1000: { slidesPerView: 3.05 }
-      }
+    // 4. Contact Form
+    gsap.from(".contact-card", {
+        scrollTrigger: {
+            trigger: "#contact",
+            start: "top 75%"
+        },
+        y: 50,
+        opacity: 0,
+        duration: 1
     });
-  } catch (err) {
-    // ignore
-  }
-}
+});

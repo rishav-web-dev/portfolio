@@ -6,7 +6,6 @@
     <title>Rishav - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css" />
 </head>
 <body>
 
@@ -31,21 +30,21 @@
             <div class="hero-text">
                 <h4>HELLO!</h4>
                 <h1>I'm <span>Rishav</span></h1>
-                <h2>Fullstack Web Developer</h2>
+                <h2 class="typewriter"></h2> 
                 <div class="hero-btns">
-                    <a href="#contact" class="btn btn-primary">Hire Me</a>
+                    <a href="#contact" class="btn btn-primary shimmer-btn">Hire Me</a>
                     <a href="#projects" class="btn btn-outline">My Works</a>
                 </div>
             </div>
             <div class="hero-img-container">
-               <img src="https://i.pinimg.com/1200x/22/1b/bc/221bbc80f97fb17b364df1eee95a77d6.jpg" alt="Rishav" class="hero-img">
+               <img src="https://i.pinimg.com/1200x/22/1b/bc/221bbc80f97fb17b364df1eee95a77d6.jpg" alt="Rishav" class="hero-img float-anim">
             </div>
         </div>
     </section>
 
     <section id="about" class="section">
         <div class="container">
-            <div class="about-content">
+             <div class="about-content">
                 <div class="about-img-wrapper">
                   <img src="https://i.pinimg.com/1200x/22/1b/bc/221bbc80f97fb17b364df1eee95a77d6.jpg" alt="About Rishav">
                 </div>
@@ -74,102 +73,97 @@
                 <p class="description center-desc">Selected projects showcasing frontend and fullstack work.</p>
             </div>
 
-                        <div class="slider" style="--width: 260px; --height: 320px; --quantity: 3;">
-                            <div class="list">
-                                <div class="item" style="--position: 1">
-                                    <div class="card">
-                                        <div class="tools">
-                                            <div class="circle"><span class="red box"></span></div>
-                                            <div class="circle"><span class="yellow box"></span></div>
-                                            <div class="circle"><span class="green box"></span></div>
-                                        </div>
-                                        <div class="card__content">
-                                            <div class="card__thumb">
-                                                <img src="https://i.pinimg.com/564x/22/1b/bc/221bbc80f97fb17b364df1eee95a77d6.jpg" alt="Project One thumbnail">
-                                            </div>
-                                            <div class="card__action">
-                                                <a class="live-btn" href="#" target="_blank">Live Demo</a>
-                                            </div>
-                                            <h3>Project One</h3>
-                                            <p>Responsive web app — React & Node.js</p>
-                                            <p><a href="#" target="_blank">Code</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item" style="--position: 2">
-                                    <div class="card">
-                                        <div class="tools">
-                                            <div class="circle"><span class="red box"></span></div>
-                                            <div class="circle"><span class="yellow box"></span></div>
-                                            <div class="circle"><span class="green box"></span></div>
-                                        </div>
-                                        <div class="card__content">
-                                            <div class="card__thumb">
-                                                <img src="https://i.pinimg.com/564x/13/6e/cf/136ecfd1fb1b3f505cb12e38c5985547.jpg" alt="Project Two thumbnail">
-                                            </div>
-                                            <div class="card__action">
-                                                <a class="live-btn" href="#" target="_blank">Live Demo</a>
-                                            </div>
-                                            <h3>Project Two</h3>
-                                            <p>E‑commerce demo with Stripe</p>
-                                            <p><a href="#" target="_blank">Code</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item" style="--position: 3">
-                                    <div class="card">
-                                        <div class="tools">
-                                            <div class="circle"><span class="red box"></span></div>
-                                            <div class="circle"><span class="yellow box"></span></div>
-                                            <div class="circle"><span class="green box"></span></div>
-                                        </div>
-                                        <div class="card__content">
-                                            <div class="card__thumb">
-                                                <img src="https://i.pinimg.com/564x/07/2a/65/072a65d6e0e7fb4f9a6d4b4b1a9e2bcd.jpg" alt="Project Three thumbnail">
-                                            </div>
-                                            <div class="card__action">
-                                                <a class="live-btn" href="#" target="_blank">Live Demo</a>
-                                            </div>
-                                            <h3>Project Three</h3>
-                                            <p>Developer tools & templates</p>
-                                            <p><a href="#" target="_blank">Code</a></p>
-                                        </div>
-                                    </div>
+            <div class="slider" style="--width: 280px; --height: 380px; --quantity: 3;">
+                <div class="list">
+                    <div class="item" style="--position: 1">
+                        <div class="card">
+                            <div class="tools">
+                                <div class="circle"><span class="red box"></span></div>
+                                <div class="circle"><span class="yellow box"></span></div>
+                                <div class="circle"><span class="green box"></span></div>
+                            </div>
+                            <div class="card__thumb">
+                                <img src="https://i.pinimg.com/564x/22/1b/bc/221bbc80f97fb17b364df1eee95a77d6.jpg" alt="Project">
+                            </div>
+                            <div class="card__content">
+                                <h3>Project One</h3>
+                                <p>A responsive full-stack application built with React, Node.js, and MongoDB.</p>
+                                <div class="card__footer">
+                                    <a class="live-btn coming-soon" href="#">Live Demo</a>
+                                    <a class="code-btn coming-soon" href="#">Code</a>
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="item" style="--position: 2">
+                        <div class="card">
+                            <div class="tools">
+                                <div class="circle"><span class="red box"></span></div>
+                                <div class="circle"><span class="yellow box"></span></div>
+                                <div class="circle"><span class="green box"></span></div>
+                            </div>
+                            <div class="card__thumb">
+                                <img src="https://i.pinimg.com/564x/13/6e/cf/136ecfd1fb1b3f505cb12e38c5985547.jpg" alt="Project">
+                            </div>
+                            <div class="card__content">
+                                <h3>E-Store</h3>
+                                <p>Full e-commerce experience with Stripe integration.</p>
+                                <div class="card__footer">
+                                    <a class="live-btn coming-soon" href="#">Live Demo</a>
+                                    <a class="code-btn coming-soon" href="#">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item" style="--position: 3">
+                        <div class="card">
+                            <div class="tools">
+                                <div class="circle"><span class="red box"></span></div>
+                                <div class="circle"><span class="yellow box"></span></div>
+                                <div class="circle"><span class="green box"></span></div>
+                            </div>
+                            <div class="card__thumb">
+                                <img src="https://i.pinimg.com/564x/07/2a/65/072a65d6e0e7fb4f9a6d4b4b1a9e2bcd.jpg" alt="Project">
+                            </div>
+                            <div class="card__content">
+                                <h3>AI Chat App</h3>
+                                <p>Messaging app using OpenAI API and WebSockets.</p>
+                                <div class="card__footer">
+                                    <a class="live-btn coming-soon" href="#">Live Demo</a>
+                                    <a class="code-btn coming-soon" href="#">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="skills" class="section">
-        <div class="container">
+         <div class="container">
             <div class="section-header center">
                 <div class="bg-watermark center-watermark">Skills</div>
                 <h2 class="section-title">My Skills</h2>
-                <p class="description center-desc">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
             </div>
-
             <div class="skills-grid">
                 <div class="skill-item">
-                    <div class="skill-info">
-                        <span>PHP</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="progress-bg">
-                        <div class="progress-bar" data-width="90%"></div>
-                    </div>
+                    <div class="skill-info"><span>JavaScript (ES6+)</span><span>90%</span></div>
+                    <div class="progress-bg"><div class="progress-bar" data-width="90%"></div></div>
                 </div>
                 <div class="skill-item">
-                    <div class="skill-info"><span>jQuery</span><span>85%</span></div>
+                    <div class="skill-info"><span>React & Redux</span><span>85%</span></div>
                     <div class="progress-bg"><div class="progress-bar" data-width="85%"></div></div>
                 </div>
                 <div class="skill-item">
-                    <div class="skill-info"><span>HTML5</span><span>95%</span></div>
-                    <div class="progress-bg"><div class="progress-bar" data-width="95%"></div></div>
+                    <div class="skill-info"><span>Node.js & Express</span><span>80%</span></div>
+                    <div class="progress-bg"><div class="progress-bar" data-width="80%"></div></div>
                 </div>
                 <div class="skill-item">
-                    <div class="skill-info"><span>CSS3</span><span>90%</span></div>
-                    <div class="progress-bg"><div class="progress-bar" data-width="90%"></div></div>
+                    <div class="skill-info"><span>CSS / Tailwind</span><span>95%</span></div>
+                    <div class="progress-bg"><div class="progress-bar" data-width="95%"></div></div>
                 </div>
             </div>
         </div>
@@ -184,7 +178,7 @@
             
             <div class="contact-card">
                 <div class="contact-form-side">
-                    <h2>Contact us</h2>
+                    <h2>Hire Me</h2>
                     <p>Please don't hesitate to reach out to us whenever you need assistance.</p>
                     <form id="contact-form">
                         <div class="form-group">
@@ -199,7 +193,7 @@
                             <label>Message</label>
                             <textarea id="message" rows="3" required></textarea>
                         </div>
-                        <button type="submit" class="submit-btn">Message</button>
+                        <button type="submit" class="submit-btn">Send Message</button>
                     </form>
                 </div>
                 <div class="contact-info-side">
@@ -216,12 +210,9 @@
         </div>
     </section>
 
-    <!-- GSAP (CDN) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <!-- Swiper (CDN) -->
-    <script src="https://unpkg.com/swiper@9/swiper-bundle.min.js"></script>
-    <script src="/scripts/app.js"></script>
+    <script src="app.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
