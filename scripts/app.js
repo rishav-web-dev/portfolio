@@ -7,10 +7,13 @@ document.addEventListener("DOMContentLoaded", () => {
     .from(".hero-text h1", { y: 30, opacity: 0, duration: 0.8 }, "-=0.3")
     .from(".hero-text h2", { y: 20, opacity: 0, duration: 0.5 }, "-=0.5")
     .from(".hero-btns", { y: 20, opacity: 0, duration: 0.5 }, "-=0.3")
+     .from(".hero-socials a", { y: 20, opacity: 0, duration: 0.5, stagger: 0.2 }, "-=0.3") 
     .from(
       ".hero-img",
       { x: 40, opacity: 0, duration: 1, ease: "power2.out" },
       "-=0.8"
+     // Add this line at the end of your hero timeline
+   
     );
 
   // 2. Section Headers
