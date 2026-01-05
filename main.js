@@ -58,4 +58,36 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  const contactForm = document.getElementById('contact-form');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const button = contactForm.querySelector('.submit-btn');
+        const originalText = button.textContent;
+        
+        button.textContent = "Sending...";
+        button.disabled = true;
+
+        const formData = new FormData(this);
+        const response = await fetch(this.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (response.ok) {
+            alert("Thanks for reaching out! I'll get back to you soon.");
+            contactForm.reset();
+        } else {
+            alert("Oops! There was a problem submitting your form.");
+        }
+        
+        button.textContent = originalText;
+        button.disabled = false;
+    });
+}
 });

@@ -60,7 +60,7 @@
         </div>
         <div class="hero-img-container">
           <img
-            src="/Images/09b1898abddfa6ccaf43139cfe072cea.jpg"
+            src="/images/09b1898abddfa6ccaf43139cfe072cea.jpg"
             alt="Rishav"
             class="hero-img float-anim"
           />
@@ -73,7 +73,7 @@
         <div class="about-content">
           <div class="about-img-wrapper">
             <img
-              src="/Images/09b1898abddfa6ccaf43139cfe072cea.jpg"
+                src="/images/09b1898abddfa6ccaf43139cfe072cea.jpg"
               alt="About Rishav"
             />
           </div>
@@ -132,7 +132,7 @@
                 </div>
                 <div class="card__thumb">
                   <img
-                    src="/Images/09b1898abddfa6ccaf43139cfe072cea.jpg"
+                      src="/images/09b1898abddfa6ccaf43139cfe072cea.jpg"
                     alt="Project"
                   />
                 </div>
@@ -159,7 +159,7 @@
                 </div>
                 <div class="card__thumb">
                   <img
-                    src="/Images/09b1898abddfa6ccaf43139cfe072cea.jpg"
+                     src="/images/09b1898abddfa6ccaf43139cfe072cea.jpg"
                     alt="Project"
                   />
                 </div>
@@ -183,7 +183,7 @@
                 </div>
                 <div class="card__thumb">
                   <img
-                    src="/Images/09b1898abddfa6ccaf43139cfe072cea.jpg"
+                     src="/images/09b1898abddfa6ccaf43139cfe072cea.jpg"
                     alt="Project"
                   />
                 </div>
@@ -271,19 +271,34 @@
               Please don't hesitate to reach out to us whenever you need
               assistance.
             </p>
-            <form id="contact-form">
+            <form
+              action="https://formspree.io/f/mbdlbojp"
+              method="POST"
+              id="contact-form"
+            >
               <div class="form-group">
                 <label>Name</label>
-                <input type="text" id="name" required />
+                <input type="text" name="name" id="name" required />
               </div>
               <div class="form-group">
                 <label>Email</label>
-                <input type="email" id="email" required />
+                <input type="email" name="_replyto" id="email" required />
               </div>
               <div class="form-group">
                 <label>Message</label>
-                <textarea id="message" rows="3" required></textarea>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="3"
+                  required
+                ></textarea>
               </div>
+              <input
+                type="hidden"
+                name="_subject"
+                value="New Portfolio Inquiry from Rishav.dev"
+              />
+
               <button type="submit" class="submit-btn">Send Message</button>
             </form>
           </div>
