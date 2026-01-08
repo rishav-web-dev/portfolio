@@ -213,16 +213,52 @@ nav {
 /* --- About Section --- */
 
 /* --- About & Skills --- */
-.about-content { display: flex; flex-direction: column; gap: 50px; align-items: center; }
-.about-img-wrapper img { width: 100%; max-width: 400px; border-radius: 15px; }
-.info-list { list-style: none; margin-top: 20px; }
-.info-list li { margin-bottom: 12px; color: #ddd; }
-.info-list strong { color: var(--primary-color); width: 120px; display: inline-block; }
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
 
-.skills-grid { display: grid; gap: 25px; grid-template-columns: 1fr; }
-.skill-info { display: flex; justify-content: space-between; margin-bottom: 8px; font-weight: 600; }
-.progress-bg { background: rgba(255,255,255,0.1); height: 6px; border-radius: 10px; overflow: hidden; }
-.progress-bar { background: var(--primary-color); height: 100%; width: 0; border-radius: 10px; transition: width 1.5s ease; }
+.about-img-wrapper img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+}
+
+.bg-watermark {
+  font-size: 50px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.03);
+  text-transform: uppercase;
+  position: absolute;
+  top: -10px;
+  z-index: -1;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.description {
+  color: var(--text-grey);
+  margin-bottom: 25px;
+}
+
+.info-list {
+  list-style: none;
+}
+
+.info-list li {
+  margin-bottom: 12px;
+}
+
+.info-list strong {
+  color: var(--primary-color);
+  width: 100px;
+  display: inline-block;
+}
 /* --- Project Slider (FIXED) --- */
 .slider {
   margin-top: 50px;
