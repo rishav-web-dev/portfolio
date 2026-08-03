@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Rishav - Portfolio</title>
+   <!-- Updated Font Pairing -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="Rishav - Fullstack Developer" />
+    <meta
+      name="description"
+      content="Portfolio of Rishav, a Fullstack Web Developer specializing in modern web applications."
+    />
+
+    <!-- Open Graph / Facebook / Discord -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Rishav - Fullstack Developer" />
+    <meta
+      property="og:description"
+      content="Portfolio of Rishav, a Fullstack Web Developer specializing in modern web applications."
+    />
+    <meta property="og:image" content="images/your-cool-preview-image.jpg" />
+    <style>
+      #projects {
+        overflow-x: hidden;
+      }
+
+      /* Modern Glassmorphism Form Styling for Dark Theme */
+      .cool-form {
+        margin-top: 20px;
+      }
+      .cool-form .form-group {
+        position: relative;
+        margin-bottom: 1.5rem;
+      }
+      .cool-form input,
+      .cool-form textarea {
+        width: 100%;
+        padding: 15px 15px 15px 45px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        color: #ffffff;
+        transition: all 0.3s ease;
+        box-sizing: border-box;
+        font-family: inherit;
+      }
+      .cool-form input:focus,
+      .cool-form textarea:focus {
+        outline: none;
+        border-color: #4facfe;
+        box-shadow: 0 0 15px rgba(79, 172, 254, 0.2);
+        background: rgba(255, 255, 255, 0.08);
+      }
+      .cool-form i.input-icon {
+        position: absolute;
+        left: 15px;
+        top: 17px;
+        color: #888888;
+        transition: color 0.3s ease;
+        pointer-events: none;
+      }
+      .cool-form input:focus ~ i.input-icon,
+      .cool-form textarea:focus ~ i.input-icon {
+        color: #4facfe;
+      }
+      .cool-form .submit-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        padding: 12px;
+        background: #4facfe;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        font-weight: 600;
+      }
+      .cool-form .submit-btn:hover i {
+        transform: translateX(4px) translateY(-4px);
+        transition: transform 0.3s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <nav>
+          <div class="logo">RISHAV</div>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div
+            class="menu-icon"
+            id="menu-icon"
+            aria-label="Toggle navigation menu"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="container hero-container">
+        <div class="hero-text">
+          <h4>HELLO!</h4>
+          <h1>I'm <span>Rishav</span></h1>
+          <h2 class="typewriter" id="typewriter-text"></h2>
+          <div class="hero-btns">
+            <a href="#contact" class="btn btn-primary shimmer-btn">Hire Me</a>
+            <a href="#projects" class="btn btn-outline">My Works</a>
+          </div>
+          <div class="hero-socials">
+            <a
+              href="https://github.com/rishav-web-dev"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/_rishav._ .__?igsh=NDE2bG9oOTViZ3Vs"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://discord.com/users/952090424334516285"
+              target="_blank"
+              aria-label="Discord"
+            >
+              <i class="fa-brands fa-discord"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-img-container">
+          <img
+            src="images/09b1898abddfa6ccaf43139cfe072cea.jpg"
+            alt="Rishav Hero"
+            class="hero-img float-anim"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-img-wrapper">
+            <img
+              src="images/09b1898abddfa6ccaf43139cfe072cea.jpg"
+              alt="About Rishav"
+            />
+          </div>
+          <div class="about-text">
+            <div class="bg-watermark"></div>
+            <h2 class="section-title">About Me</h2>
+            <p class="description">
+             "I am a Fullstack Developer and student based in Kolkata. I bridge the gap between creative visual design and robust system architecture. Whether it's crafting high-fidelity interfaces or automating backend workflows in Linux, I focus on building tools that are as performant as they are intuitive."
+            </p>
+            <ul class="info-list" style="margin-top: 20px">
+              <li><strong>Name:</strong> Rishav</li>
+              <li><strong>Email:</strong> rishavbelel@gmail.com</li>
+              <li><strong>Phone:</strong> +91 9038116037</li>
+              <li><strong>Status:</strong> Student & Independent Freelancer</li>
+              <li>
+                <strong>Education:</strong> High School Student (Science & Tech)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header center">
+          <h2 class="section-title">My Projects</h2>
+        </div>
+        <!-- Note: --quantity is updated to 4 -->
+        <div
+          class="slider"
+          style="--width: 280px; --height: 420px; --quantity: 4"
+        >
+          <div class="list">
+            <!-- Project 1 -->
+            <div class="item" style="--position: 1">
+              <div class="card">
+                <div class="tools">
+                  <span class="red box"></span><span class="yellow box"></span
+                  ><span class="green box"></span>
+                </div>
+                <div class="card__thumb">
+                  <!-- Keep your default image or update the src later -->
+                  <img
+                    src="images/09b1898abddfa6ccaf43139cfe072cea.jpg"
+                    alt="J.A.R.V.I.S -_- CLI"
+                  />
+                </div>
+                <div class="card__content">
+                  <h3>J.A.R.V.I.S -_- Automation</h3>
+                  <p>
+                    Local command-line assistant built to manage files and
+                    execute tasks via localized LLMs.
+                  </p>
+                  <div class="card__footer">
+                    <a href="#">Python</a>
+                    <a href="#">Linux CLI</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="item" style="--position: 2">
+              <div class="card">
+                <div class="tools">
+                  <span class="red box"></span><span class="yellow box"></span
+                  ><span class="green box"></span>
+                </div>
+                <div class="card__thumb">
+                  <img
+                    src="images/09b1898abddfa6ccaf43139cfe072cea.jpg"
+                    alt="P2P Chat"
+                  />
+                </div>
+                <div class="card__content">
+                  <h3>Encrypted P2P Chat</h3>
+                  <p>
+                    A secure, serverless phone-to-phone messaging architecture
+                    designed for private communication -_-
+                  </p>
+                  <div class="card__footer">
+                    <a href="#">React</a>
+                    <a href="#">Express.js</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="item" style="--position: 3">
+              <div class="card">
+                <div class="tools">
+                  <span class="red box"></span><span class="yellow box"></span
+                  ><span class="green box"></span>
+                </div>
+                <div class="card__thumb">
+                  <img
+                    src="images/09b1898abddfa6ccaf43139cfe072cea.jpg"
+                    alt="FLAC Player"
+                  />
+                </div>
+                <div class="card__content">
+                  <h3>Hi-Fi Music Player</h3>
+                  <p>
+                    Native Android application optimized for processing and
+                    playing lossless FLAC audio files -_-
+                  </p>
+                  <div class="card__footer">
+                    <a href="#">Mobile Dev</a>
+                    <a href="#">Java</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="item" style="--position: 4">
+              <div class="card">
+                <div class="tools">
+                  <span class="red box"></span><span class="yellow box"></span
+                  ><span class="green box"></span>
+                </div>
+                <div class="card__thumb">
+                  <img
+                    src="images/09b1898abddfa6ccaf43139cfe072cea.jpg"
+                    alt="Fullstack App"
+                  />
+                </div>
+                <div class="card__content">
+                  <h3>Fullstack App</h3>
+                  <p>
+                    Responsive web application built to handle complex front-end
+                    states and backend routing -_-
+                  </p>
+                  <div class="card__footer">
+                    <a href="#">React</a>
+                    <a href="#">Node.js</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header center">
+          <h2 class="section-title">My Skills</h2>
+          <p class="description">
+            A well-rounded toolkit for setting up and managing end-to-end
+            projects.
+          </p>
+        </div>
+
+        <div class="skills-grid new-skills-layout">
+          <!-- Frontend -->
+          <div class="skill-category-card">
+            <h3><i class="fa-solid fa-code"></i> Frontend</h3>
+            <div class="skill-chips">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip highlight">React (Learning)</span>
+            </div>
+          </div>
+
+          <!-- Backend & Databases -->
+          <div class="skill-category-card">
+            <h3><i class="fa-solid fa-server"></i> Backend & DB</h3>
+            <div class="skill-chips">
+              <span class="chip">PHP</span>
+              <span class="chip">Python</span>
+              <span class="chip">SQL</span>
+              <span class="chip">Node.js</span>
+            </div>
+          </div>
+
+          <!-- Systems & Tools -->
+          <div class="skill-category-card">
+            <h3><i class="fa-solid fa-terminal"></i> Systems & Tools</h3>
+            <div class="skill-chips">
+              <span class="chip highlight">Linux Environment</span>
+              <span class="chip">Bash Scripting</span>
+              <span class="chip">Automation</span>
+              <span class="chip">Git</span>
+            </div>
+          </div>
+
+          <!-- Design -->
+          <div class="skill-category-card">
+            <h3><i class="fa-solid fa-pen-nib"></i> Design</h3>
+            <div class="skill-chips">
+              <span class="chip">Graphic Design</span>
+              <span class="chip">Web Design</span>
+              <span class="chip">UI/UX</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Terminal Section -->
+    <section id="terminal-section" class="section">
+        <div class="container">
+            <div class="section-header center">
+                <h2 class="section-title">System Terminal</h2>
+                <p class="description">Run a few commands to explore the environment.</p>
+            </div>
+            
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="tools">
+                        <span class="red box"></span><span class="yellow box"></span><span class="green box"></span>
+                    </div>
+                    <span class="terminal-title">visitor@rishav-os: ~</span>
+                </div>
+                <div class="terminal-body" id="terminal-body" onclick="document.getElementById('terminal-input').focus()">
+                    <div id="terminal-output">
+                        <p class="sys-msg">Initiating Termux environment...</p>
+                        <p class="sys-msg">Establishing secure connection...</p>
+                        <p class="sys-msg">Welcome to Rishav-OS. Type <span class="highlight-cmd">help</span> to see available commands.</p>
+                    </div>
+                    <div class="terminal-input-line">
+                        <span class="prompt">visitor@rishav-os:~$</span>
+                        <input type="text" id="terminal-input" autocomplete="off" spellcheck="false" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title center">Contact Me</h2>
+        <div class="contact-card">
+          <div class="contact-form-side">
+            <form
+              action="https://formspree.io/f/mbdlbojp"
+              method="POST"
+              class="cool-form"
+            >
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+                <i class="fa-solid fa-user input-icon"></i>
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+                <i class="fa-solid fa-envelope input-icon"></i>
+              </div>
+
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  placeholder="What's on your mind?"
+                  rows="4"
+                  required
+                ></textarea>
+                <i class="fa-solid fa-comment-dots input-icon"></i>
+              </div>
+
+              <button type="submit" class="submit-btn shimmer-btn">
+                Send Message <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <div class="footer-logo">RISHAV</div>
+                <p class="footer-quote">"Building systems, creating environments, exploring the unknown."</p>
+            </div>
+            <div class="footer-right">
+                <p class="copyright">&copy; 2026 Rishav. All rights reserved.</p>
+            </div>
+        </div>
+        
+        <!-- Back to Top Button -->
+        <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Mobile Menu Toggle
+        const menuIcon = document.getElementById("menu-icon");
+        const navLinks = document.getElementById("nav-links");
+        if (menuIcon) {
+          menuIcon.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+          });
+        }
+
+        // Typewriter Effect
+        const textEl = document.getElementById("typewriter-text");
+        const text = "Fullstack Web Developer";
+        let i = 0;
+        function type() {
+          if (i < text.length) {
+            textEl.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(type, 100);
+          }
+        }
+        type();
+
+        // --- Active Nav Link on Scroll ---
+        const sections = document.querySelectorAll("section");
+
+        // Fixed the missing dot for the class selector here
+        const navItems = document.querySelectorAll(" .nav-links a");
+
+        const observerOptions = {
+          root: null,
+          rootMargin: "-20% 0px -70% 0px",
+          threshold: 0,
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              navItems.forEach((link) => link.classList.remove("active"));
+              const id = entry.target.getAttribute("id");
+
+              // Fixed the missing dot for the class selector here as well
+              const activeLink = document.querySelector(
+                ` .nav-links a[href="#${id}"]`,
+              );
+              if (activeLink) {
+                activeLink.classList.add("active");
+              }
+            }
+          });
+        }, observerOptions);
+
+        sections.forEach((section) => observer.observe(section));
+
+        // --- GSAP Cinematic Scroll Reveals ---
+            gsap.registerPlugin(ScrollTrigger);
+
+            // 1. Fade up section titles, descriptions, and the about list
+            gsap.utils.toArray('.section-title, .description, .info-list').forEach(element => {
+                gsap.fromTo(element, 
+                    { y: 40, opacity: 0 }, 
+                    {
+                        scrollTrigger: {
+                            trigger: element,
+                            start: "top 85%",
+                            toggleActions: "play none none reverse"
+                        },
+                        y: 0,
+                        opacity: 1,
+                        duration: 1.2,
+                        ease: "power3.out"
+                    }
+                );
+            });
+
+            // 2. Stagger the Skill Cards (Bulletproof fromTo fix)
+            gsap.fromTo('.skill-category-card', 
+                { y: 50, opacity: 0 },
+                {
+                    scrollTrigger: {
+                        trigger: '.new-skills-layout',
+                        start: "top 85%",
+                        toggleActions: "play none none reverse"
+                    },
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.8,
+                    stagger: 0.2,
+                    ease: "back.out(1.2)"
+                }
+            );
+
+            // 3. Smooth fade for the Contact Form
+            gsap.fromTo('.contact-form-side', 
+                { y: 40, opacity: 0 },
+                {
+                    scrollTrigger: {
+                        trigger: '.contact-card',
+                        start: "top 80%",
+                        toggleActions: "play none none reverse"
+                    },
+                    y: 0,
+                    opacity: 1,
+                    duration: 1,
+                    ease: "power3.out"
+                }
+            );
+            // --- Interactive Terminal Logic ---
+            const termInput = document.getElementById('terminal-input');
+            const termOutput = document.getElementById('terminal-output');
+            const termBody = document.getElementById('terminal-body');
+
+            const commands = {
+                'help': 'Available commands: <br> - <span class="highlight-cmd">whoami</span>: Admin info <br> - <span class="highlight-cmd">skills</span>: Technical stack <br> - <span class="highlight-cmd">ls</span>: List projects <br> - <span class="highlight-cmd">contact</span>: Get in touch <br> - <span class="highlight-cmd">jarvis</span>: Boot automation',
+                'whoami': 'Rishav: Fullstack dev, Linux enthusiast, and perpetual learner based in Kolkata.',
+                'ls': 'jarvis.py  p2p-chat/  hifi-player/  fullstack-app/',
+                'contact': 'Email: [your-email@example.com] <br> GitHub: github.com/yourusername',
+                'skills': 'Frontend: HTML, CSS, JS, React <br> Backend: Python, PHP, SQL, Node.js <br> Systems: Linux, Bash, Git',
+                'jarvis': 'J.A.R.V.I.S. protocol initiated... [OK] File management automated. [OK] LLM configurations loaded.',
+                'clear': 'CLEAR_TERMINAL'
+            };
+
+            if (termInput) {
+                termInput.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter') {
+                        const inputVal = this.value.trim().toLowerCase();
+                        
+                        // Print the user's command to the screen
+                        const userLine = document.createElement('div');
+                        userLine.innerHTML = `<span class="prompt">visitor@rishav-os:~$</span> <span style="color:#fff">${this.value}</span>`;
+                        termOutput.appendChild(userLine);
+
+                        // Process the command
+                        if (inputVal === 'clear') {
+                            termOutput.innerHTML = '';
+                        } else if (inputVal !== '') {
+                            const responseLine = document.createElement('div');
+                            responseLine.style.marginBottom = '10px';
+                            
+                            if (commands[inputVal]) {
+                                responseLine.innerHTML = commands[inputVal];
+                            } else {
+                                responseLine.innerHTML = `<span class="err-msg">Command not found: ${inputVal}. Type 'help' for a list of commands.</span>`;
+                            }
+                            termOutput.appendChild(responseLine);
+                        }
+
+                        // Clear input and scroll to bottom
+                        this.value = '';
+                        termBody.scrollTop = termBody.scrollHeight;
+                    }
+                });
+            }
+            // --- Back to Top Button Logic ---
+            const backToTopBtn = document.getElementById("back-to-top");
+
+            // Show button when scrolled down 300px
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 300) {
+                    backToTopBtn.classList.add("show");
+                } else {
+                    backToTopBtn.classList.remove("show");
+                }
+            });
+
+            // Smooth scroll to top on click
+            backToTopBtn.addEventListener("click", () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+      });
+    </script>
+  </body>
+</html>
